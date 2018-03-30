@@ -1,0 +1,1 @@
+<img id="{{ $prefix }}-readcount-scatterplot" src='{{"/run-images?path=".urlencode("/$runHash/workingDir/Analysis/ReadCount_Scatterplots/counts_$prefix.png" )}}'>

@@ -1,0 +1,4 @@
+LibFilename: 'Oxford_genome-wide.tsv'
+seq_5_end: 'GTTTTCCTCAATACTTCN'       
+NonTargetPrefix: '(None present)'
+NumGuidesPerGene: 4         

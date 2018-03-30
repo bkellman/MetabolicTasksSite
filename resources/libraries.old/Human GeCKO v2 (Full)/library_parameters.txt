@@ -1,0 +1,5 @@
+LibFilename: 'GeCKOv2_Human.tsv'            
+seq_5_end: 'TCTTGTGGAAAGGACGAAACACCN'       
+NonTargetPrefix: 'NonTargeting'        
+NumGuidesPerGene: 6                       
+                                       

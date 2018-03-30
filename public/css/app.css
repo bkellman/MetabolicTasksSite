@@ -1,0 +1,110 @@
+.top-bar{
+	margin-bottom: 1em;
+  background-color: #8a8a8a;
+}
+.top-bar ul{
+  background-color: inherit;
+}
+#top-bar-name {
+  font-size: 2em;
+  line-height: normal;
+}
+#top-bar-logo {
+  height: 2em;
+  width: 2em;
+  border-radius: 25%;
+  margin-right: .5em;
+}
+.top-bar-left {
+  display: flex;
+  align-items: center;
+}
+.top-bar a{
+  color: white;
+}
+/* CSS for the loading wheel*/
+.loader {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.button.success {
+  color: white;
+}
+
+.button.bold {
+  font-weight: bold;
+}
+.button.trim {
+  margin: 0;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.top-bar-left li.menu-text > a {
+  padding: 0;
+}
+
+.tabs-title > a[aria-selected='true'] {
+    background: #258faf;
+    color: white;
+}
+
+.help-bubble {
+  font-weight: 900;
+  font-size: .9em;
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: text-bottom;
+  cursor: help;
+  background: #767676;
+  color: #fefefe;
+  border-radius: 50%;
+}
+
+#title-row {
+  /*border-bottom-style: ridge;*/
+  margin-bottom: 1em;
+}
+#description-row {
+  /*border-bottom-style: ridge;*/
+  margin-bottom: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+#error-messages {
+  margin-top: -1em;
+}
+
+img {
+  max-height: 600px;
+}
+select:invalid { color: gray; }
