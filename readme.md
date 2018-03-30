@@ -26,3 +26,8 @@ This code is licensed under the [MIT license](http://opensource.org/licenses/MIT
 - impliment check that uploaded genes are in the selected reference model
 - remove files.blade from the workflow
 - impliment conditionality in the parameters page (revisit javascript)
+- removed custom thresholds temporarily ln45:parameters.blade.php
+	- 	<div class="column medium-3">
+			<label for="custom-thresh-file">Custom Threshold File: (col1: gene name, col2: value threshold)</label>
+			<input type="file" id="custom-thresh-file" name="custom-thresh-file" required="false" accept=".csv, .tsv">
+		</div>
