@@ -1,7 +1,12 @@
 @php
 	$title = "Configure your analysis run";
-	$description = "Please choose your <b>expression preprocessing</b><br>
-	If you wish to edit the default parameter settings, click <b>“Advanced Options”</b>";
+	$description = "Please choose your <b>expression preprocessing:</b><br>
+	<ul>
+		<li>global: threshold of expression is unique and defined based on a percentile computed from the distribution of the gene expression or value directly provided by the users</li>
+		<li>local: each gene is associated with is own expression threshold. It can be computed using different rules (e.g., mean of gene value across the samples, ...)</li>
+	</ul>
+	<b>Note:</b> the type of thresholding available to the users will depend on the number of sample available (e.g. local thresholding approach will only be available when expression data associated with at least 3 different samples ar provided). <br>
+	<b>Recommended Rule:</b> For each gene the activity threshold is defined by the mean value of the expression over all the samples available. BUT, the threshold need to be higher or equal the 25th percentile (global threshold), AND it should be lower or equal to the 75th percentile (global threshold).;"
 @endphp
 @extends('layouts.master',["title"=>$title, "description"=>$description])
 @section('before_title')
