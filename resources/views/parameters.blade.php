@@ -6,7 +6,7 @@
 		<li>local: each gene is associated with is own expression threshold. It can be computed using different rules (e.g., mean of gene value across the samples, ...)</li>
 	</ul>
 	<b>Note:</b> the type of thresholding available to the users will depend on the number of sample available (e.g. local thresholding approach will only be available when expression data associated with at least 3 different samples ar provided). <br>
-	<b>Recommended Rule:</b> For each gene the activity threshold is defined by the mean value of the expression over all the samples available. BUT, the threshold need to be higher or equal the 25th percentile (global threshold), AND it should be lower or equal to the 75th percentile (global threshold).;"
+	<b>Min/Max Means Rule:</b> For each gene the activity threshold is defined by the mean value of the expression over all the samples available. BUT, the threshold need to be higher or equal the 25th percentile (global threshold), AND it should be lower or equal to the 75th percentile (global threshold).;"
 @endphp
 @extends('layouts.master',["title"=>$title, "description"=>$description])
 @section('before_title')
@@ -28,30 +28,27 @@
 	@endforeach
 	</div>
 </fieldset>
-<fieldset id="custom-library-fields" style="display: none;" disabled="true">
-	<legend>Custom Library Parameters</legend>
+<fieldset>
+	<legend>Global Threshold Parameters</legend>
 	<div class="row">
-		<div class="column medium-3">
-			<label for="custom-lib-file">Custom Library File</label>
-			<input type="file" id="custom-lib-file" name="custom-lib-file" required="true" accept=".csv, .tsv">
-		</div>
-		@foreach (config('pinapl_config.parameter_groups.Library Parameters') as $paramName => $parameter)
-			@include('layouts.input',["name" => $paramName, "parameter"=>$parameter, "required"=>true])
+		@foreach (config('pinapl_config.parameter_groups.Global Parameters') as $paramName => $parameter)
+			@include('layouts.input',["name" => $paramName, "parameter"=>$parameter, "required"=>false])
 		@endforeach
 	</div>
 </fieldset>
-<div class="row">
-	<div class="columns">
-		<ul class="accordion" data-accordion data-allow-all-closed="true">
-			<li class="accordion-item" data-accordion-item>
-				<a class="accordion-title" href="#">Advanced Options</a>
-				<div id="advanced-options-panel" class="accordion-content" data-tab-content>
-					@include('advanced_options')
-				</div>
-			</li>
-		</ul>
+<fieldset>
+	<legend>Local Threshold Parameters</legend>
+	<div class="row">
+		@foreach (config('pinapl_config.parameter_groups.Local Parameters') as $paramName => $parameter)
+			@include('layouts.input',["name" => $paramName, "parameter"=>$parameter, "required"=>false])
+		@endforeach
+		<div class="column medium-3">
+			<label for="custom-thresh-file">Custom Threshold File: (col1: gene name, col2: value threshold)</label>
+			<input type="file" id="custom-thresh-file" name="custom-thresh-file" required="false" accept=".csv, .tsv">
+		</div>
 	</div>
-</div>
+</fieldset>
+
 <div class="row align-right">
 	<div class="column shrink">
 		<input type="submit" value="Start Run" class="button success">

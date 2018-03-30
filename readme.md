@@ -21,3 +21,8 @@ After installation and setup open the .env file and fill in any empty variables,
 ## License
 
 This code is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Todo
+- impliment check that uploaded genes are in the selected reference model
+- remove files.blade from the workflow
+- impliment conditionality in the parameters page (revisit javascript)

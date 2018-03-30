@@ -3,24 +3,75 @@
 return [
 	"parameter_groups" =>[
 		"Required" => [	
-			"ScreenType" => [
-				"display_name"=>"Screen Type",
-				"default"=>"enrichment",
+			"ThreshType" => [
+				"display_name"=>"Gene Threshold",
+				"default"=>"global",
 				"placeholder"=>"Please select",
-				"help_text"=>"Specifies the type of screen.",
+				"help_text"=>"Specifies the type of thresholding.",
 				"in_quotes"=>true,
-				"rules" => "string|required|in:enrichment,depletion",
+				"rules" => "string|required|in:global,local",
 				"type"=> "select",
-				"options" => ["enrichment"=>"Enrichment", "depletion"=>"Depletion"]
+				"options" => ["global"=>"Global", "local"=>"Local"]
 			],
-			"LibFilename" => [ 
-				"display_name"=>"Library",
-				"default"=> "GeCKOv2_library.tsv",
-				"placeholder"=> "Please select",
-				"help_text"=>"filename of library spreadsheet",
+			"SampleNumber" => [ 
+				"display_name"=>"Number of Samples",
+				"default"=> "0",
+				"placeholder"=> "Please specify",
+				"help_text"=>"number of samples",
+				"in_quotes"=>false,
+				"rules" => "numeric|required|min:1",
+				"type"=>'number'
+			]
+		],
+		"Global Parameters" => [	
+			"percentile_or_value" => [
+				"display_name"=>"Percentile or Value",
+				"default"=>"percentile",
+				"help_text"=>"Choose a thresholding method",
 				"in_quotes"=>true,
-				"rules" => "",
-				"type"=>"select"
+				"rules" => "string|required|in:percentile,value",
+				"type"=> "select",
+				"options" => ["percentile"=>"Percentile", "value"=>"Value"]
+			],
+			"percentile" => [ 
+				"display_name"=>"Minimum Percentile",
+				"default"=> "25",
+				"placeholder"=> "Percent (5-95%)",
+				"help_text"=>"Enter the minimum percentile for gene retention",
+				"in_quotes"=>false,
+				"rules" => "numeric|min:5|max:95",
+				"type"=>'number'
+			],
+			"value" => [ 
+				"display_name"=>"Minimum Expression Value",
+				"default"=> "5",
+				"placeholder"=> "Expression Value (1-1000)",
+				"help_text"=>"Enter the minimum value for gene retention",
+				"in_quotes"=>false,
+				"rules" => "numeric|min:1|max:1000",
+				"type"=>'number'
+			]
+		],
+		"Local Parameters" => [	
+			"EnoughSamples" => [
+				"display_name"=>"3 or more samples?",
+				"default"=>"no",
+				"placeholder"=>"Please select",
+				"help_text"=>"Only use local thresholding with 3 or more samples",
+				"in_quotes"=>true,
+				"rules" => "string|in:yes,no",
+				"type"=> "select",
+				"options" => ["yes"=>"Yes", "no"=>"No"]
+			],
+			"LocalThresholdType" => [
+				"display_name"=>"Local Threshold Method",
+				"default"=>"MinMaxMean",
+				"placeholder"=>"Please select",
+				"help_text"=>"Please select a local thresholding method",
+				"in_quotes"=>true,
+				"rules" => "string|in:minmaxmean,mean,custom",
+				"type"=> "select",
+				"options" => ["minmaxmean"=>"MinMaxMean", "mean"=>"Mean","custom"=>"Custom"]
 			]
 		],
 		"Library Parameters" => [	
