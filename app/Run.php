@@ -26,7 +26,7 @@ class Run extends Model
 	 * @var array
 	 */
 	protected $fillable = [
-		'name', 'email', 'status', 'dir', 'data_dir'
+		'name', 'email', 'status', 'dir', 'data_dir' , 'ref'
 	];
 
 

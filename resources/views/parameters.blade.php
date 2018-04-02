@@ -42,10 +42,6 @@
 		@foreach (config('pinapl_config.parameter_groups.Local Parameters') as $paramName => $parameter)
 			@include('layouts.input',["name" => $paramName, "parameter"=>$parameter, "required"=>false])
 		@endforeach
-		<div class="column medium-3">
-			<label for="custom-thresh-file">Custom Threshold File: (col1: gene name, col2: value threshold)</label>
-			<input type="file" id="custom-thresh-file" name="custom-thresh-file" required="false" accept=".csv, .tsv">
-		</div>
 	</div>
 </fieldset>
 
@@ -63,7 +59,7 @@
 <script type="text/javascript">
 $("#LibFilename-input").change(function function_name(argument) {
 	if (this.value == "custom") {
-		$("#custom-library-fields").attr('disabled',false)
+		$("#custom-library-fields").attr('disabled',true)
 		$("#custom-library-fields").slideDown();
 	}
 	else {

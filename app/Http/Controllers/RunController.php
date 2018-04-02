@@ -99,6 +99,7 @@ class RunController extends Controller
 		$newRun = Run::create( [
 			'email'=>$oldRun->email,
 			'name'=>$name,
+			'ref'=>$oldRun->ref,
 			'status'=> 'setting-parameters',
 			'dir' => time(),
 			'data_dir'=>$oldRun->data_dir
@@ -150,10 +151,10 @@ class RunController extends Controller
 	    $this->generateConfig($req, $run->directory());
 
 	    $startRunScript = app()->basePath()."/app/Scripts/startRun.sh";
-	    $dockerImage = config('docker.image');
-	    $numCores = config('docker.num_cores');
+//	    $dockerImage = config('docker.image');
+//	    $numCores = config('docker.num_cores');
 	    $dataPath = storage_path("data/$run->data_dir");
-	    $runCmd = "bash $startRunScript $dockerImage $dir $dataPath $numCores > $dir/runStatus.log";
+	    $runCmd = "bash $startRunScript $dir $dataPath > $dir/runStatus.log";
 	    File::put("$dir/runCmd.sh", $runCmd);
 	    $runsInQueue = Run::where('status','queued')->exists() || Run::where('status','running')->exists();
 	    if (! $runsInQueue) {
@@ -285,6 +286,7 @@ class RunController extends Controller
 			}
 			$config.="\n";
 		}
+		$config .= "ref".DB::select('select ref from run where hash == $hash')."\n";
 		
 		$config .= config('pinapl_config.directories');
 		$config .= "\n";
