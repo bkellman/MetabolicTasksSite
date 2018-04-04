@@ -286,8 +286,11 @@ class RunController extends Controller
 			}
 			$config.="\n";
 		}
-		$config .= "ref".DB::select('select ref from run where hash == $hash')."\n";
-		
+#		$config .= "ref:".DB::select('select ref from run where hash == $hash')."\n";
+		$run = Run::where('dir',$hash)->firstOrFail();
+
+		$config .= "ref:"." '$run->ref' \n";
+
 		$config .= config('pinapl_config.directories');
 		$config .= "\n";
 		$config .= config('pinapl_config.script_filenames');
