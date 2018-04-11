@@ -148,7 +148,7 @@ class RunController extends Controller
 
 
 	    $data = $req->all();
-	    $this->generateConfig($req, $run->directory());
+	    $this->generateConfig($req, $run->directory(),$hash);
 
 	    $startRunScript = app()->basePath()."/app/Scripts/startRun.sh";
 //	    $dockerImage = config('docker.image');
@@ -181,6 +181,7 @@ class RunController extends Controller
 		$run = Run::where('dir',$hash)->firstOrFail();
 		$run->status='managing-files';
 		$run->save();
+		// check that uploaded genes are in the model and display in files.blade.php
 		return redirect("/files/$hash");
 	}
 
@@ -229,7 +230,7 @@ class RunController extends Controller
 		return redirect("/parameters/$hash");
 	}
 
-	public function generateConfig($req, $dir)
+	public function generateConfig($req, $dir,$hash)
 	{
 
 
@@ -288,7 +289,6 @@ class RunController extends Controller
 		}
 #		$config .= "ref:".DB::select('select ref from run where hash == $hash')."\n";
 		$run = Run::where('dir',$hash)->firstOrFail();
-
 		$config .= "ref:"." '$run->ref' \n";
 
 		$config .= config('pinapl_config.directories');
