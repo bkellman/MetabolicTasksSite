@@ -26,11 +26,15 @@
 		$id = preg_replace("/[^a-zA-Z0-9_-]/", "_", $file);
 	?>
 	<div class="row align-middle" id="{{ $file }}">
-		<div class="column medium-5 file-name"><span title="{{ $file }}">{{ $file }}</span></div>
+		<div class="column medium-5 file-name">
+			<span title="{{ $file }}">{{ $file }}</span>
+		</div>
 		<div class="column medium-1 text-center">
 			<input type="checkbox" value="control" id="group-{{ $id }}" name="group-{{ $file }}" onclick="controlClick('{{ $id }}')">
 		</div>
-		<div class="column medium-5"><input type="text" id="rename-{{ $id }}" name="rename-{{$file}}" placeholder="Condition Name"></div>
+		<div class="column medium-5">
+			<input type="text" id="rename-{{ $id }}" name="rename-{{$file}}" placeholder="Condition Name">
+		</div>
 	</div>
 @endforeach
 <div class="row align-right">
