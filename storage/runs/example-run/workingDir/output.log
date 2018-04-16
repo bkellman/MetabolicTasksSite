@@ -1,762 +1,461 @@
-**************************************************
-Launching PinAPL-Py v2.7.6..
-P. Spahn et al., UC San Diego (09/2017)
-**************************************************
-
-
-**************************************************
-Running character sanity check ...
-**************************************************
-No special characters found.
-Character sanity check completed.
-
-
-
-
-**************************************************
-Reading data ...
-**************************************************
-Found sample Control_1
-Found sample Control_2
-Found sample ToxA_1
-Found sample ToxA_2
-Found sample ToxB_1
-Found sample ToxB_2
-
-Data input completed.
-
-
-
-
-**************************************************
-Running sequence quality control ...
-**************************************************
-Started analysis of Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 5% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 10% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 15% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 20% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 25% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 30% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 35% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 40% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 45% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 50% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 55% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 60% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 65% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 70% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 75% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 80% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 85% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 90% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 95% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Approx 100% complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Analysis complete for Control_R2_S15_L008_R1_001_x.fastq.gz
-Started analysis of ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 5% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 10% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 15% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 20% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 25% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 30% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 35% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 40% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 45% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 50% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 55% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 60% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 65% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 70% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 75% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 80% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 85% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 90% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 95% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Approx 100% complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Analysis complete for ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Started analysis of ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 5% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 10% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 15% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 20% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 25% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 30% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 35% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 40% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 45% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 50% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 55% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 60% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 65% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 70% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 75% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 80% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 85% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 90% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 95% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Approx 100% complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Analysis complete for ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Started analysis of ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 5% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 10% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 15% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 20% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 25% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 30% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 35% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 40% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 45% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 50% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 55% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 60% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 65% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 70% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 75% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 80% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 85% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 90% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 95% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Approx 100% complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Analysis complete for ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Started analysis of Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 5% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 10% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 15% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 20% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 25% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 30% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 35% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 40% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 45% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 50% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 55% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 60% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 65% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 70% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 75% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 80% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 85% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 90% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 95% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Approx 100% complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Analysis complete for Control_R1_S14_L008_R1_001_x.fastq.gz
-Started analysis of ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 5% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 10% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 15% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 20% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 25% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 30% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 35% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 40% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 45% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 50% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 55% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 60% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 65% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 70% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 75% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 80% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 85% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 90% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 95% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Approx 100% complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Analysis complete for ToxA_R2_S2_L005_R1_001_x.fastq.gz
-------------------------------------------------
-Script completed.
-Time elapsed (Quality control) [secs]: 29.921
-
-Sequence quality control completed.
-
-
-
-
-**************************************************
-Trimming reads ...
-**************************************************
-Loading Control_R2_S15_L008_R1_001_x.fastq.gz
-Loading ToxB_R1_98_S4_L008_R1_001_x.fastq.gz
-Loading ToxB_R2_S4_L005_R1_001_x.fastq.gz
-Loading ToxA_R1_98_S2_L008_R1_001_x.fastq.gz
-Loading Control_R1_S14_L008_R1_001_x.fastq.gz
-Loading ToxA_R2_S2_L005_R1_001_x.fastq.gz
-Removing adapters ...
-Extracting 20 bp sgRNA sequences ...
-Adapter removal completed.
-Writing logfiles...
-------------------------------------------------
-Script completed.
-Time elapsed (Read trimming) [secs]: 15.488
-
-Read trimming completed.
-
-
-
-
-**************************************************
-Aligning reads ...
-**************************************************
-Processing sample Control_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Aligning reads to library ...
-499804 reads; of these:
-  499804 (100.00%) were unpaired; of these:
-    26942 (5.39%) aligned 0 times
-    408554 (81.74%) aligned exactly 1 time
-    64308 (12.87%) aligned >1 times
-94.61% overall alignment rate
-Alignment completed.
-Time elapsed (Alignment) [secs]: 5.905
-Analyzing alignment ...
-Applying matching threshold ...
-Applying ambiguity threshold ...
-*** Successfully mapped reads: 337067 (67.4%) ***
-Writing alignment logfile ...
-Plotting mapping quality ...
-Plotting alignment scores ...
-Alignment analysis completed.
-Time elapsed (Alignment analysis) [secs]: 2.079
-Read counting in progress ...
-Counting reads per sgRNA ...
-Counting reads per gene ...
-Read counting completed.
-Time elapsed (Read Counting) [secs]: 2.911
-Removing raw alignment output...
-Time elapsed (Clean-up) [secs]: 0.030
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 11.226
-
-Processing sample Control_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Aligning reads to library ...
-499792 reads; of these:
-  499792 (100.00%) were unpaired; of these:
-    28504 (5.70%) aligned 0 times
-    405699 (81.17%) aligned exactly 1 time
-    65589 (13.12%) aligned >1 times
-94.30% overall alignment rate
-Alignment completed.
-Time elapsed (Alignment) [secs]: 4.770
-Analyzing alignment ...
-Applying matching threshold ...
-Applying ambiguity threshold ...
-*** Successfully mapped reads: 335865 (67.3%) ***
-Writing alignment logfile ...
-Plotting mapping quality ...
-Plotting alignment scores ...
-Alignment analysis completed.
-Time elapsed (Alignment analysis) [secs]: 1.937
-Read counting in progress ...
-Counting reads per sgRNA ...
-Counting reads per gene ...
-Read counting completed.
-Time elapsed (Read Counting) [secs]: 2.702
-Removing raw alignment output...
-Time elapsed (Clean-up) [secs]: 0.022
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 9.661
-
-Processing sample ToxA_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Aligning reads to library ...
-499290 reads; of these:
-  499290 (100.00%) were unpaired; of these:
-    21646 (4.34%) aligned 0 times
-    411555 (82.43%) aligned exactly 1 time
-    66089 (13.24%) aligned >1 times
-95.66% overall alignment rate
-Alignment completed.
-Time elapsed (Alignment) [secs]: 4.172
-Analyzing alignment ...
-Applying matching threshold ...
-Applying ambiguity threshold ...
-*** Successfully mapped reads: 342137 (68.5%) ***
-Writing alignment logfile ...
-Plotting mapping quality ...
-Plotting alignment scores ...
-Alignment analysis completed.
-Time elapsed (Alignment analysis) [secs]: 1.917
-Read counting in progress ...
-Counting reads per sgRNA ...
-Counting reads per gene ...
-Read counting completed.
-Time elapsed (Read Counting) [secs]: 2.660
-Removing raw alignment output...
-Time elapsed (Clean-up) [secs]: 0.038
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 9.027
-
-Processing sample ToxA_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Aligning reads to library ...
-499892 reads; of these:
-  499892 (100.00%) were unpaired; of these:
-    28785 (5.76%) aligned 0 times
-    405753 (81.17%) aligned exactly 1 time
-    65354 (13.07%) aligned >1 times
-94.24% overall alignment rate
-Alignment completed.
-Time elapsed (Alignment) [secs]: 4.181
-Analyzing alignment ...
-Applying matching threshold ...
-Applying ambiguity threshold ...
-*** Successfully mapped reads: 334267 (66.9%) ***
-Writing alignment logfile ...
-Plotting mapping quality ...
-Plotting alignment scores ...
-Alignment analysis completed.
-Time elapsed (Alignment analysis) [secs]: 1.876
-Read counting in progress ...
-Counting reads per sgRNA ...
-Counting reads per gene ...
-Read counting completed.
-Time elapsed (Read Counting) [secs]: 2.618
-Removing raw alignment output...
-Time elapsed (Clean-up) [secs]: 0.023
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 8.946
-
-Processing sample ToxB_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Aligning reads to library ...
-499987 reads; of these:
-  499987 (100.00%) were unpaired; of these:
-    27292 (5.46%) aligned 0 times
-    414621 (82.93%) aligned exactly 1 time
-    58074 (11.62%) aligned >1 times
-94.54% overall alignment rate
-Alignment completed.
-Time elapsed (Alignment) [secs]: 4.292
-Analyzing alignment ...
-Applying matching threshold ...
-Applying ambiguity threshold ...
-*** Successfully mapped reads: 354859 (71.0%) ***
-Writing alignment logfile ...
-Plotting mapping quality ...
-Plotting alignment scores ...
-Alignment analysis completed.
-Time elapsed (Alignment analysis) [secs]: 1.924
-Read counting in progress ...
-Counting reads per sgRNA ...
-Counting reads per gene ...
-Read counting completed.
-Time elapsed (Read Counting) [secs]: 2.724
-Removing raw alignment output...
-Time elapsed (Clean-up) [secs]: 0.038
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 9.209
-
-Processing sample ToxB_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Aligning reads to library ...
-499999 reads; of these:
-  499999 (100.00%) were unpaired; of these:
-    28983 (5.80%) aligned 0 times
-    413396 (82.68%) aligned exactly 1 time
-    57620 (11.52%) aligned >1 times
-94.20% overall alignment rate
-Alignment completed.
-Time elapsed (Alignment) [secs]: 4.299
-Analyzing alignment ...
-Applying matching threshold ...
-Applying ambiguity threshold ...
-*** Successfully mapped reads: 353732 (70.8%) ***
-Writing alignment logfile ...
-Plotting mapping quality ...
-Plotting alignment scores ...
-Alignment analysis completed.
-Time elapsed (Alignment analysis) [secs]: 1.889
-Read counting in progress ...
-Counting reads per sgRNA ...
-Counting reads per gene ...
-Read counting completed.
-Time elapsed (Read Counting) [secs]: 2.806
-Removing raw alignment output...
-Time elapsed (Clean-up) [secs]: 0.031
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 9.256
-
-Read alignments completed.
-
-
-
-
-**************************************************
-Normalizing read counts ...
-**************************************************
-++++++++++++++++++++++++++++++++++++++++++++++++
-Normalizing to counts per million reads ...
-Processing ToxB_2 ...
-Processing ToxA_1 ...
-Processing Control_1 ...
-Processing Control_2 ...
-Processing ToxA_2 ...
-Processing ToxB_1 ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.810
-
-Normalization completed.
-
-
-
-
-**************************************************
-Analyzing read counts ...
-**************************************************
-Processing sample Control_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Computing Gini coefficients ... 
-Gini Index (sgRNAs): 0.774
-Gini Index (genes): 0.467
-Plotting Lorenz curves ...
-Generating boxplots...
-Generating histograms...
-Writing distribution file ... 
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.426
-
-Processing sample Control_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Computing Gini coefficients ... 
-Gini Index (sgRNAs): 0.752
-Gini Index (genes): 0.445
-Plotting Lorenz curves ...
-Generating boxplots...
-Generating histograms...
-Writing distribution file ... 
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.444
-
-Processing sample ToxA_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Computing Gini coefficients ... 
-Gini Index (sgRNAs): 0.95
-Gini Index (genes): 0.797
-Plotting Lorenz curves ...
-Generating boxplots...
-Generating histograms...
-Writing distribution file ... 
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.420
-
-Processing sample ToxA_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Computing Gini coefficients ... 
-Gini Index (sgRNAs): 0.92
-Gini Index (genes): 0.72
-Plotting Lorenz curves ...
-Generating boxplots...
-Generating histograms...
-Writing distribution file ... 
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.426
-
-Processing sample ToxB_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Computing Gini coefficients ... 
-Gini Index (sgRNAs): 0.971
-Gini Index (genes): 0.895
-Plotting Lorenz curves ...
-Generating boxplots...
-Generating histograms...
-Writing distribution file ... 
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.405
-
-Processing sample ToxB_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Computing Gini coefficients ... 
-Gini Index (sgRNAs): 0.972
-Gini Index (genes): 0.904
-Plotting Lorenz curves ...
-Generating boxplots...
-Generating histograms...
-Writing distribution file ... 
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.397
-
-Read count analysis completed.
-
-
-
-
-**************************************************
-Analyzing control distribution ...
-**************************************************
-++++++++++++++++++++++++++++++++++++++++++++++++
-Reading control counts ...
-Estimating mean and variance ...
-Computing parameters of neg. binomial distribution ...
-Writing dataframe ...
-Generating dispersion plot ...
-Generating log regression plot ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 3.006
-
-Control analysis completed.
-
-
-
-
-**************************************************
-sgRNA enrichment analysis ...
-**************************************************
-Processing sample ToxA_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Loading read counts ...
-Computing fold-changes and p-values...
-p-value correction ...
-Plotting p-values ...
-Writing results dataframe ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 7.361
-
-Processing sample ToxA_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Loading read counts ...
-Computing fold-changes and p-values...
-p-value correction ...
-Plotting p-values ...
-Writing results dataframe ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 7.471
-
-Processing sample ToxB_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Loading read counts ...
-Computing fold-changes and p-values...
-p-value correction ...
-Plotting p-values ...
-Writing results dataframe ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 6.694
-
-Processing sample ToxB_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Loading read counts ...
-Computing fold-changes and p-values...
-p-value correction ...
-Plotting p-values ...
-Writing results dataframe ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 6.621
-
-sgRNA enrichment analysis completed.
-
-
-
-
-**************************************************
-Read count scatterplots ...
-**************************************************
-Processing sample ToxA_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Reading counts ...
-Log10 transformation ...
-Generating scatterplot ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.582
-
-Processing sample ToxA_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Reading counts ...
-Log10 transformation ...
-Generating scatterplot ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.582
-
-Processing sample ToxB_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Reading counts ...
-Log10 transformation ...
-Generating scatterplot ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.562
-
-Processing sample ToxB_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Reading counts ...
-Log10 transformation ...
-Generating scatterplot ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.570
-
-Read count scatterplots completed.
-
-
-
-
-**************************************************
-Replicate correlation ...
-**************************************************
-Processing sample Control ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Sample 1: Control_1 | Sample 2: Control_2
-Reading counts ...
-Log10 transformation ...
-Computing correlation ...
-Generating scatterplot ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.647
-
-Processing sample ToxB ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Sample 1: ToxB_1 | Sample 2: ToxB_2
-Reading counts ...
-Log10 transformation ...
-Computing correlation ...
-Generating scatterplot ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.631
-
-Processing sample ToxA ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Sample 1: ToxA_1 | Sample 2: ToxA_2
-Reading counts ...
-Log10 transformation ...
-Computing correlation ...
-Generating scatterplot ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 1.597
-
-
-Replicate correlation analysis completed.
-
-
-
-
-**************************************************
-Clustering analysis ...
-**************************************************
-++++++++++++++++++++++++++++++++++++++++++++++++
-Loading read counts ...
-Computing variance ...
-Extracting top 25 most variable sgRNAs ...
-Writing dataframe ...
-Plotting heatmap ...
---------------------------------------------
-KernSmooth 2.23 loaded
-Copyright M. P. Wand 1997-2009
-
-Attaching package: 'gplots'
-
-The following object is masked from 'package:stats':
-
-    lowess
-
---------------------------------------------
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 2.242
-
-Clustering analysis completed.
-
-
-
-
-**************************************************
-Gene ranking analysis ...
-**************************************************
-Processing sample ToxA_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Loading sgRNA enrichment table ...
-Looking for sgRNAs with significant fold change ...
-Computing aRRA scores ...
-Time elapsed (aRRA Computation) [secs]: 3.420
-Estimating aRRA null distribution (1000 permutations)...
-Time elapsed (aRRA Permutation) [secs]: 0.169
-Computing aRRA p-values ...
-Plotting p-values ...
-Computing average fold change across sgRNAs ...
-Writing results dataframe ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 8.863
-
-
-Processing sample ToxA_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Loading sgRNA enrichment table ...
-Looking for sgRNAs with significant fold change ...
-Computing aRRA scores ...
-Time elapsed (aRRA Computation) [secs]: 3.476
-Estimating aRRA null distribution (1000 permutations)...
-Time elapsed (aRRA Permutation) [secs]: 0.166
-Computing aRRA p-values ...
-Plotting p-values ...
-Computing average fold change across sgRNAs ...
-Writing results dataframe ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 9.238
-
-
-Processing sample ToxB_1 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Loading sgRNA enrichment table ...
-Looking for sgRNAs with significant fold change ...
-Computing aRRA scores ...
-Time elapsed (aRRA Computation) [secs]: 3.102
-Estimating aRRA null distribution (1000 permutations)...
-Time elapsed (aRRA Permutation) [secs]: 0.158
-Computing aRRA p-values ...
-Plotting p-values ...
-Computing average fold change across sgRNAs ...
-Writing results dataframe ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 7.739
-
-
-Processing sample ToxB_2 ... 
-++++++++++++++++++++++++++++++++++++++++++++++++
-Loading sgRNA enrichment table ...
-Looking for sgRNAs with significant fold change ...
-Computing aRRA scores ...
-Time elapsed (aRRA Computation) [secs]: 3.159
-Estimating aRRA null distribution (1000 permutations)...
-Time elapsed (aRRA Permutation) [secs]: 0.188
-Computing aRRA p-values ...
-Plotting p-values ...
-Computing average fold change across sgRNAs ...
-Writing results dataframe ...
-------------------------------------------------
-Script completed.
-Time elapsed (Total) [secs]: 7.846
-
-
-Gene ranking analysis completed.
-
-
-
-
-**************************************************
-PinAPL-Py completed.
-Time elapsed [mins]: 3.407
+/var/www/pinapl-py-site/storage/data/1523909223_33/aa_metab.csv
+configuration.yaml
 
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018a (9.4.0.813654) 64-bit (glnxa64)
+                             February 23, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+config_file =
+
+    '/var/www/pinapl-py-site/storage/runs/1523909223_33/workingDir/configuration.yaml'
+
+
+ThreshType =
+
+    'global'
+
+
+SampleNumber =
+
+    10
+
+
+ref =
+
+    'MT_recon_2_2_entrez.mat'
+
+
+percentile_or_value =
+
+    'percentile'
+
+
+percentile =
+
+    50
+
+
+value =
+
+     5
+
+
+EnoughSamples =
+
+    'no'
+
+
+LocalThresholdType =
+
+    'MinMaxMean'
+
+
+percentile_low =
+
+    25
+
+
+percentile_high =
+
+    75
+
+
+value_low =
+
+     5
+
+
+value_high =
+
+     5
+
+
+data = 
+
+  struct with fields:
+
+    gene: [32x1 string]
+
+
+data = 
+
+  struct with fields:
+
+     gene: [32x1 string]
+    value: [32x10 double]
+
+
+model = 
+
+  struct with fields:
+
+           modelVersion: [1x1 struct]
+                   rxns: {7785x1 cell}
+                   mets: {5324x1 cell}
+                      S: [5324x7785 double]
+                    rev: [7785x1 double]
+                      c: [7785x1 double]
+               metNames: {5324x1 cell}
+            metFormulas: {5324x1 cell}
+                     lb: [7785x1 double]
+                     ub: [7785x1 double]
+             metCharges: [5324x1 double]
+                  rules: {7785x1 cell}
+                  genes: {1675x1 cell}
+             rxnGeneMat: [7785x1675 double]
+                grRules: {7785x1 cell}
+             subSystems: {7785x1 cell}
+    rxnConfidenceScores: {7785x1 cell}
+          rxnReferences: {7785x1 cell}
+           rxnECNumbers: {7785x1 cell}
+               rxnNotes: {7785x1 cell}
+               rxnNames: {7785x1 cell}
+             metChEBIID: {5324x1 cell}
+              metHMDBID: {5324x1 cell}
+              metKEGGID: {5324x1 cell}
+           metPubChemID: {5324x1 cell}
+         metInChIString: {5324x1 cell}
+                      b: [5324x1 double]
+            description: 'recon_2.2'
+
+1 genes provided are not included in the reference model:
+
+ans = 
+
+    "259307"
+
+
+score =
+
+  Columns 1 through 7
+
+    2.8924    2.5656    2.2601    1.1389    2.1959    2.7318    1.9029
+    1.0634    1.7968    1.7498    1.0142    0.3677    1.7280    1.2769
+    2.8924    2.5656    2.2601    1.1389    2.1959    2.7318    1.9029
+    1.0634    1.7968    1.7498    1.0142    0.3677    1.7280    1.2769
+    1.9335    2.9576    2.0671    2.1020    1.8333    2.7311    2.0294
+    1.0634    1.7968    1.7498    1.0142    0.3677    1.7280    1.2769
+    2.8924    2.5656    2.2601    1.1389    2.1959    2.7318    1.9029
+    1.0634    1.7968    1.7498    1.0142    0.3677    1.7280    1.2769
+    1.0634    1.7968    1.7498    1.0142    0.3677    1.7280    1.2769
+    2.3412    2.8771    3.3378    3.6276    3.5444    3.7338    3.1068
+    1.8282    2.1122    2.2709    1.8738    2.6436    2.5128    1.8259
+    1.9344    2.3289    2.1577    1.5444    2.0419    2.3719    1.5467
+    3.0945    2.1996    4.1489    3.5322    2.4067    3.0253    3.0162
+    1.7435    1.6036    2.3381    1.6877    1.7355    2.1808    1.8220
+    3.6681    2.8408    4.8743    4.1507    2.8760    3.6246    3.4202
+    2.6691    1.7155    2.5290    2.0988    2.8077    2.5869    2.3104
+    1.5419    1.2518    2.0385    0.7802    2.4715    2.5959    1.3693
+    1.8457    1.6780    1.8914    1.4132    1.4882    2.1336    1.3391
+    0.6874    0.8778    1.0567    1.2745    1.5345    1.4176    1.3313
+    2.0307    1.8466    2.0763    1.5526    1.6021    2.3373    1.4474
+    2.9884    1.2573    4.7049    3.3825    2.6811    3.9271    2.4333
+    4.6368    0.7015    3.2128    1.2181    0.1629    3.4143    1.0437
+    1.4163    1.1360    2.3134    0.3426    4.2052    4.9417    2.3813
+    1.9931    0.9047    1.8100    1.2326    1.1495    2.1404    1.2227
+    1.7049    1.9897    1.9343    1.5944    1.7820    2.2027    1.4979
+    1.1542    0.2162    1.3653    1.5693    1.2421    1.2552    0.7696
+    1.5668    1.8179    1.8818    1.2984    2.1620    1.9968    1.3326
+    1.7077    1.8466    1.8723    1.5526    1.7796    2.1564    1.4474
+    3.4085    1.8585    3.6234    0.2985    2.3955    2.4351    0.4717
+    1.1855    0.4797    2.1398    1.0715    1.0926    0.9330    2.7193
+    2.3012    1.7266    2.7551    1.3446    2.5007    2.4852    1.3852
+    2.2193    2.6269    2.5002    2.4826    2.5047    2.9457    2.3690
+    2.3412    2.8771    3.3378    3.6276    3.5444    3.7338    3.1068
+    1.7836    2.2430    2.0156    1.5980    1.8592    2.3381    1.6020
+    1.7836    2.2430    2.0156    1.5980    1.8592    2.3381    1.6020
+    1.7836    2.2430    2.0156    1.5980    1.8592    2.3381    1.6020
+    1.5254    1.7761    1.7481    1.4349    1.6134    1.9672    1.3698
+    1.6894    2.0040    2.1119    1.5235    2.2539    2.2465    1.3205
+    1.7049    1.9897    1.9343    1.5944    1.7820    2.2027    1.4979
+    1.5518    1.7037    1.7181    1.4062    1.6696    1.9879    1.3353
+    0.6415    0.8312    1.0729    1.2747    1.4351    1.3093    1.3218
+    1.5718    1.9711    1.7960    1.4181    1.6598    2.0562    1.4448
+    1.7886    2.1135    2.5239    2.5117    2.3737    2.5079    2.1299
+    1.7836    2.2430    2.0156    1.5980    1.8592    2.3381    1.6020
+    1.7832    1.9249    1.9505    1.5330    1.8698    2.1898    1.4380
+    1.5792    2.0149    1.8049    1.4094    1.7117    2.1048    1.4424
+    1.7836    2.2430    2.0156    1.5980    1.8592    2.3381    1.6020
+
+  Columns 8 through 10
+
+    3.0342    2.9256    1.2744
+    1.0357    1.2871    0.4805
+    3.0342    2.9256    1.2744
+    1.0357    1.2871    0.4805
+    3.2983    2.5456    2.2182
+    1.0357    1.2871    0.4805
+    3.0342    2.9256    1.2744
+    1.0357    1.2871    0.4805
+    1.0357    1.2871    0.4805
+    3.0527    3.0931    3.7537
+    2.4662    1.9613    2.2576
+    2.6812    2.0235    2.1797
+    2.7258    3.4606    2.6521
+    2.3586    1.8796    1.9018
+    2.9895    4.3217    3.4012
+    1.4516    2.0521    2.6012
+    2.5565    1.9073    2.0635
+    2.4742    1.8239    1.7214
+    1.4952    0.7021    1.2905
+    2.6974    2.0229    1.8765
+    3.3021    3.5711    2.3364
+    3.7278    4.3106    0.3863
+    4.1030    4.7039    2.0297
+    2.2685    2.0337    1.0297
+    2.5686    1.7369    2.0628
+    1.2325    0.7878    1.4051
+    1.9730    1.7235    1.8056
+    2.4753    1.7067    1.8907
+    3.0454    1.1350    3.5218
+    1.0274    0.9846    1.4681
+    2.7853    1.2529    2.8886
+    2.7752    2.5591    2.6978
+    3.0527    3.0931    3.7537
+    2.7594    1.8725    2.1568
+    2.7594    1.8725    2.1568
+    2.7594    1.8725    2.1568
+    2.3196    1.5813    1.8464
+    2.0321    1.5848    1.8224
+    2.5686    1.7369    2.0628
+    2.2830    1.5780    1.7464
+    1.4267    0.8533    1.1852
+    2.4555    1.6804    1.9016
+    1.9542    2.5756    2.6835
+    2.7594    1.8725    2.1568
+    2.4685    1.7912    1.9276
+    2.4835    1.6909    1.9431
+    2.7594    1.8725    2.1568
+
+
+score_binary =
+
+     0     1     0     0     0     0     0     1     0     0
+     0     1     1     0     0     1     1     0     1     0
+     0     1     0     0     0     0     0     1     0     0
+     0     1     1     0     0     1     1     0     1     0
+     0     1     0     0     0     0     0     1     0     0
+     0     1     1     0     0     1     1     0     1     0
+     0     1     0     0     0     0     0     1     0     0
+     0     1     1     0     0     1     1     0     1     0
+     0     1     1     0     0     1     1     0     1     0
+     0     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1
+     0     1     0     0     0     1     0     1     0     1
+     0     0     1     1     0     1     1     0     1     0
+     0     0     0     0     0     0     0     1     0     0
+     1     0     1     1     0     1     0     0     1     0
+     0     0     1     0     1     1     0     0     0     1
+     0     0     0     0     1     1     0     1     0     0
+     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     1     1     1     1     0     1
+     0     0     0     0     0     0     0     1     0     0
+     0     0     1     0     0     1     0     0     1     0
+     1     0     0     1     0     0     1     1     1     0
+     0     0     0     0     1     1     0     1     1     0
+     0     0     0     0     0     1     1     1     0     0
+     0     0     0     0     0     0     0     1     0     0
+     0     0     1     1     1     1     0     1     0     1
+     0     1     1     0     1     1     0     1     1     1
+     0     0     0     0     0     1     0     1     0     0
+     0     0     1     0     0     0     0     0     0     1
+     1     0     1     1     1     0     1     0     1     0
+     0     0     1     0     1     1     0     1     0     1
+     0     1     0     0     0     1     0     1     0     1
+     0     1     1     1     1     1     1     1     1     1
+     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     0     0     1     0     0
+     1     1     1     0     1     1     0     1     0     1
+     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     1     0     1     0     0
+     0     0     1     0     1     0     1     1     0     0
+     0     0     0     0     0     0     0     1     0     0
+     0     0     1     0     1     0     1     1     1     1
+     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     1     0     1     0     0
+     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     0     0     1     0     0
+
+
+taskInfos =
+
+  47x4 cell array
+
+  Columns 1 through 3
+
+    {'10' }    {'Inosine monoph...'}    {'NUCLEOTIDE MET...'}
+    {'11' }    {'Cytidine triph...'}    {'NUCLEOTIDE MET...'}
+    {'12' }    {'Guanosine trip...'}    {'NUCLEOTIDE MET...'}
+    {'13' }    {'Uridine tripho...'}    {'NUCLEOTIDE MET...'}
+    {'14' }    {'Deoxyadenosine...'}    {'NUCLEOTIDE MET...'}
+    {'15' }    {'Deoxycytidine ...'}    {'NUCLEOTIDE MET...'}
+    {'16' }    {'Deoxyguanosine...'}    {'NUCLEOTIDE MET...'}
+    {'17' }    {'Deoxyuridine t...'}    {'NUCLEOTIDE MET...'}
+    {'18' }    {'Deoxythymidine...'}    {'NUCLEOTIDE MET...'}
+    {'31' }    {'Gluconeogenesi...'}    {'CARBOHYDRATES ...'}
+    {'62' }    {'Alanine synthesis'}    {'AMINO ACIDS ME...'}
+    {'63' }    {'Alanine degrad...'}    {'AMINO ACIDS ME...'}
+    {'65' }    {'Arginine synth...'}    {'AMINO ACIDS ME...'}
+    {'66' }    {'Arginine degra...'}    {'AMINO ACIDS ME...'}
+    {'67' }    {'Synthesis of a...'}    {'AMINO ACIDS ME...'}
+    {'69' }    {'Synthesis of a...'}    {'AMINO ACIDS ME...'}
+    {'71' }    {'Asparagine syn...'}    {'AMINO ACIDS ME...'}
+    {'72' }    {'Asparagine deg...'}    {'AMINO ACIDS ME...'}
+    {'73' }    {'Aspartate synt...'}    {'AMINO ACIDS ME...'}
+    {'74' }    {'Aspartate degr...'}    {'AMINO ACIDS ME...'}
+    {'75' }    {'Conversion of ...'}    {'AMINO ACIDS ME...'}
+    {'76' }    {'Conversion of ...'}    {'AMINO ACIDS ME...'}
+    {'77' }    {'Conversion of ...'}    {'AMINO ACIDS ME...'}
+    {'78' }    {'beta-Alanine s...'}    {'AMINO ACIDS ME...'}
+    {'79' }    {'beta-Alanine d...'}    {'AMINO ACIDS ME...'}
+    {'81' }    {'Beta-alanine t...'}    {'AMINO ACIDS ME...'}
+    {'84' }    {'Cysteine degra...'}    {'AMINO ACIDS ME...'}
+    {'88' }    {'Glutamate degr...'}    {'AMINO ACIDS ME...'}
+    {'89' }    {'Conversion of ...'}    {'AMINO ACIDS ME...'}
+    {'91' }    {'Conversion of ...'}    {'AMINO ACIDS ME...'}
+    {'92' }    {'Glutamine synt...'}    {'AMINO ACIDS ME...'}
+    {'93' }    {'Glutamine degr...'}    {'AMINO ACIDS ME...'}
+    {'94' }    {'Glutaminolysis...'}    {'AMINO ACIDS ME...'}
+    {'100'}    {'Histidine degr...'}    {'AMINO ACIDS ME...'}
+    {'107'}    {'Isoleucine deg...'}    {'AMINO ACIDS ME...'}
+    {'109'}    {'Leucine degrad...'}    {'AMINO ACIDS ME...'}
+    {'112'}    {'Lysine degrada...'}    {'AMINO ACIDS ME...'}
+    {'116'}    {'Methionine deg...'}    {'AMINO ACIDS ME...'}
+    {'118'}    {'Ornithine degr...'}    {'AMINO ACIDS ME...'}
+    {'124'}    {'Phenylalanine ...'}    {'AMINO ACIDS ME...'}
+    {'128'}    {'Proline synthesis'}    {'AMINO ACIDS ME...'}
+    {'129'}    {'Proline degrad...'}    {'AMINO ACIDS ME...'}
+    {'130'}    {'Synthesis of p...'}    {'AMINO ACIDS ME...'}
+    {'132'}    {'Threonine degr...'}    {'AMINO ACIDS ME...'}
+    {'134'}    {'Tryptophan deg...'}    {'AMINO ACIDS ME...'}
+    {'143'}    {'Tyrosine degra...'}    {'AMINO ACIDS ME...'}
+    {'148'}    {'Valine degrada...'}    {'AMINO ACIDS ME...'}
+
+  Column 4
+
+    {'IMP SYNTHESIS ...'}
+    {'UMP SYNTHESIS'    }
+    {'IMP SYNTHESIS ...'}
+    {'UMP SYNTHESIS'    }
+    {'DEOXYNUCLEOTID...'}
+    {'DEOXYNUCLEOTID...'}
+    {'DEOXYNUCLEOTID...'}
+    {'DEOXYNUCLEOTID...'}
+    {'DEOXYNUCLEOTID...'}
+    {'GLUCONEOGENESIS'  }
+    {'ALANINE METABO...'}
+    {'ALANINE METABO...'}
+    {'ARGININE METAB...'}
+    {'ARGININE METAB...'}
+    {'ARGININE METAB...'}
+    {'ASPARTATE META...'}
+    {'ASPARAGINE MET...'}
+    {'ASPARAGINE MET...'}
+    {'ASPARTATE META...'}
+    {'ASPARTATE META...'}
+    {'ASPARTATE META...'}
+    {'ASPARTATE META...'}
+    {'ASPARTATE META...'}
+    {'BETA-ALANINE M...'}
+    {'BETA-ALANINE M...'}
+    {'BETA-ALANINE M...'}
+    {'CYSTEINE METAB...'}
+    {'GLUTAMATE META...'}
+    {'GLUTAMATE META...'}
+    {'GLUTAMATE META...'}
+    {'GLUTAMINE META...'}
+    {'GLUTAMINE META...'}
+    {'GLUTAMINE META...'}
+    {'HISTIDINE META...'}
+    {'ISOLEUCINE MET...'}
+    {'LEUCINE METABO...'}
+    {'LYSINE METABOLISM'}
+    {'METHIONINE MET...'}
+    {'ORNITHINE META...'}
+    {'PHENYLALANINE ...'}
+    {'PROLINE METABO...'}
+    {'PROLINE METABO...'}
+    {'PROLINE METABO...'}
+    {'THREONINE META...'}
+    {'TRYPTOPHAN MET...'}
+    {'TYROSINE METAB...'}
+    {'VALINE METABOLISM'}
+
+
+rownames =
+
+  47x1 cell array
+
+    {'Inosine monophosphate synthesis (IMP)'       }
+    {'Cytidine triphosphate synthesis (CTP)'       }
+    {'Guanosine triphosphate synthesis (GTP)'      }
+    {'Uridine triphosphate synthesis (UTP)'        }
+    {'Deoxyadenosine triphosphate synthesis (dATP)'}
+    {'Deoxycytidine triphosphate synthesis (dCTP)' }
+    {'Deoxyguanosine triphosphate synthesis (dGTP)'}
+    {'Deoxyuridine triphosphate synthesis (dUTP)'  }
+    {'Deoxythymidine triphosphate synthesis (dTTP)'}
+    {'Gluconeogenesis from Glutamine'              }
+    {'Alanine synthesis'                           }
+    {'Alanine degradation'                         }
+    {'Arginine synthesis'                          }
+    {'Arginine degradation'                        }
+    {'Synthesis of arginine from glutamine'        }
+    {'Synthesis of aspartate from glutamine'       }
+    {'Asparagine synthesis'                        }
+    {'Asparagine degradation'                      }
+    {'Aspartate synthesis'                         }
+    {'Aspartate degradation'                       }
+    {'Conversion of aspartate to arginine'         }
+    {'Conversion of aspartate to beta-alanine'     }
+    {'Conversion of asparate to asparagine'        }
+    {'beta-Alanine synthesis'                      }
+    {'beta-Alanine degradation'                    }
+    {'Beta-alanine to 3-oxopropanoate'             }
+    {'Cysteine degradation'                        }
+    {'Glutamate degradation'                       }
+    {'Conversion of glutamate to glutamine'        }
+    {'Conversion of GABA into succinate'           }
+    {'Glutamine synthesis'                         }
+    {'Glutamine degradation'                       }
+    {'Glutaminolysis (glutamine to lactate)'       }
+    {'Histidine degradation'                       }
+    {'Isoleucine degradation'                      }
+    {'Leucine degradation'                         }
+    {'Lysine degradation'                          }
+    {'Methionine degradation'                      }
+    {'Ornithine degradation'                       }
+    {'Phenylalanine degradation'                   }
+    {'Proline synthesis'                           }
+    {'Proline degradation'                         }
+    {'Synthesis of proline from glutamine'         }
+    {'Threonine degradation'                       }
+    {'Tryptophan degradation'                      }
+    {'Tyrosine degradation'                        }
+    {'Valine degradation'                          }
+
+
+colnames =
+
+     1     2     3     4     5     6     7     8     9    10
+
+
+score_long = 
+
+  struct with fields:
+
+    sample: [1x470 double]
+      task: {1x470 cell}
+     value: [1x470 double]
+
+MATLAB: management.cpp:671: find: Assertion `' failed.
+MATLAB: management.cpp:671: find: Assertion `' failed.
+/var/www/pinapl-py-site/app/Scripts/bensRun.sh: line 11:  5743 Aborted                 (core dumped) /var/www/MATLAB/R2018a/bin/matlab -softwareopengl -nodisplay -nosplash -nodesktop -r "data_file='${filei}' ;config_file='${RUN_DIR}/workingDir/configuration.yaml'; addpath(genpath('/var/www/MATLAB/lib/MetTasks/')); run"
