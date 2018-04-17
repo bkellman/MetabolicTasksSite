@@ -7,8 +7,10 @@
 	</div>
 	<div class="medium-9 columns" id="welcome-text">
 		<div class="row">
-			<h4><b>P</b>latform-<b>in</b>dependent <b>A</b>nalysis of <b>P</b>oo<b>L</b>ed screens using <b>Py</b>thon</h4>
-			<b>A comprehensive web application for quality control, read alignment and enrichment/depletion analysis of CRISPR/Cas9 screens.</b>
+			<h4>CellFie</h4>
+		</div>
+		<div>
+			<b>A metabolic modeling informed approach to functional enrichment.</b>
 		</div>
 		<div class="row">
 			Please enter a name for your run below.<br>

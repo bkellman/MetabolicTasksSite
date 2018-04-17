@@ -1,6 +1,8 @@
 @extends('layouts.master')
-
 @section('content')
+<h2>UNDER CONSTRUCTION</h2>
+@stop
+<!-- @section('content')
 	<p class="c45" id="h.gjdgxs">
 		<span class="c3">
 			<a class="c5" href="#h-1">1 Running PinAPL-Py</a>
@@ -1121,4 +1123,4 @@
 					text-align: justify
 				}
 			</style>
-@stop
+@stop -->

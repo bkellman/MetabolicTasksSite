@@ -76,7 +76,7 @@
 			 $.post(
 			'/done-uploading/{{ $hash }}',{_token : token},
 			function (data) {
-				location.replace('/files/{{ $hash }}');
+				location.replace('/parameters/{{ $hash }}');
 			}
 		);
 	});

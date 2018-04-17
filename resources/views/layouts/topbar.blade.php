@@ -1,7 +1,7 @@
 <div class="top-bar">
   <div class="top-bar-left">
     <img id="top-bar-logo" src="/img/logo.png">
-    <a id="top-bar-name" href="/">PinAPL-Py</a>
+    <a id="top-bar-name" href="/">CellFie</a>
   </div>
   <div class="top-bar-right">
     <ul class="menu">

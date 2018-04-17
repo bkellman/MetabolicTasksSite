@@ -1,6 +1,8 @@
 @extends('layouts.master')
 @section('content')
-<div id="content">
+<h2>UNDER CONSTRUCTION</h2>
+
+<!-- <div id="content">
 	<div class="row">
 		<div class="twelve columns">
 			<h1>Contact Us</h1>
@@ -17,5 +19,5 @@
 			<small>The PinAPL-Py project was supported by generous funding from the Novo Nordisk Foundation provided to the Center for Biosustainability (NNF16CC0021858), and grants from NIGMS (R35 GM119850 & P50 GM085764), NCI (R21 CA199292 & R21 CA177519), DOD (OC140179) and NHLBI (U54 HL108460 and U24 HL126127).</small>
 	</div>
 </div>
-</div>
+</div> -->
 @stop
