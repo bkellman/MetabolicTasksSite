@@ -179,10 +179,10 @@ class RunController extends Controller
 	public function postDoneUploading($hash)
 	{
 		$run = Run::where('dir',$hash)->firstOrFail();
-		$run->status='managing-files';
+		$run->status='setting-parameters';
 		$run->save();
 		// check that uploaded genes are in the model and display in files.blade.php
-		return redirect("/files/$hash");
+		return redirect("/parameters/$hash");
 	}
 
 	public function postConfigureFiles(Request $request, $hash)
