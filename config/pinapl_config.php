@@ -73,19 +73,19 @@ return [
 			"valueLow" => [ 
 				"display_name"=>"Minimum Expression Value",
 				"default"=> "5",
-				"placeholder"=> "Expression Value (1-1000)",
+				"placeholder"=> "Expression Value (1-100)",
 				"help_text"=>"Enter the minimum value for gene retention",
 				"in_quotes"=>false,
-				"rules" => "numeric|min:1|max:1000",
+				"rules" => "numeric|min:1|max:100",
 				"type"=>'number'
 			],
 			"valueHigh" => [ 
 				"display_name"=>"Maximum Expression Value",
 				"default"=> "5",
-				"placeholder"=> "Expression Value (1-1000)",
+				"placeholder"=> "Expression Value (1-10000)",
 				"help_text"=>"Enter the maximum value for gene retention",
 				"in_quotes"=>false,
-				"rules" => "numeric|min:1|max:1000",
+				"rules" => "numeric|min:1|max:10000",
 				"type"=>'number'
 			]
 		],
