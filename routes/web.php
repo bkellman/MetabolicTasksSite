@@ -37,8 +37,8 @@ Route::get('/contact', function () {
 
 Route::get('/example-data', function ()
 {
-		$path = resource_path('exampleFiles/PinAPL-py_demo_data.zip');
-		$filename = 'PinAPL-py_demo_data.zip';
+		$path = resource_path('exampleFiles/CellFie_demo_data.zip');
+		$filename = 'CellFie_demo_data.zip';
 		header("X-Sendfile: $path");
 		header("Content-type: application/octet-stream");
 		header('Content-Disposition: attachment; filename="' . $filename . '"');
@@ -103,6 +103,7 @@ Route::get('/run/{hash}', function ($hash)  {
 });
 
 // Manage the uploaded files
+/*
 Route::get('/files/{hash}', function ($hash)  {
 	try {
 		$run = \App\Run::where('dir',$hash)->firstOrFail();
@@ -120,7 +121,7 @@ Route::get('/files/{hash}', function ($hash)  {
 		abort(404);
 	}
 });
-
+*/
 // Create the configuration.yaml
 Route::get('/parameters/{hash}', function ($hash)  {
 	try {
@@ -147,7 +148,7 @@ Route::get('/run/download/{hash}', function ($hash)  {
 	try {
 		$path = storage_path("/runs/$hash/archive.zip");
 		$runName = $hash;
-		$filename = sanitizeFileName("PinAPL-py_example_run.zip");
+		$filename = sanitizeFileName("CellFie_demo_data.zip");
 		if ($hash != "example-run") {
 			$run = \App\Run::where('dir',$hash)->firstOrFail();
 			$filename = sanitizeFileName($runName) .'_'. $hash . ".zip";
