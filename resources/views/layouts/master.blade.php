@@ -11,15 +11,15 @@
     @yield('customCSS')
     <script src="/js/vendor/modernizr.js"></script>
     @if (!App::isLocal())
-      <!-- Global site tag (gtag.js) - Google Analytics -->
- <!--      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64425044-2"></script> -->
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117942558-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        gtag('config', 'UA-64425044-2');
-      </script>
+  gtag('config', 'UA-117942558-1');
+</script>
 
     @endif
   </head>
