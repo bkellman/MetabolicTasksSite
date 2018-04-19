@@ -12,7 +12,7 @@ for filei in $DATA_DIR ; do
 #	filei=${RUN_DIR}/workingdir/Data/${filei}
 	echo $filei 
 	echo configuration.yaml
-	/var/www/MATLAB/R2018a/bin/matlab -softwareopengl -nodisplay -nosplash -nodesktop -r "data_file='${filei}' ;config_file='${RUN_DIR}/workingDir/configuration.yaml'; addpath(genpath('/var/www/MATLAB/lib/MetTasks/')); run" 
+	/var/www/MATLAB/R2018a/bin/matlab -softwareopengl -nodisplay -nosplash -nodesktop -r "data_file='${filei}' ;config_file='${RUN_DIR}/workingDir/configuration.yaml'; addpath(genpath('/var/www/MATLAB/lib/MetTasks/')); run; exit" 
 done
 
 #cp output.log Analysis/Configuration/

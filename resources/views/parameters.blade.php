@@ -78,16 +78,16 @@
 @stop
 @section('customScripts')
 <script type="text/javascript">
-$("#LocalThresholdType-input").change(function function_name(argument) {
-	if (this.value == "custom") {
-		$("#custom-lib-file").attr('disabled',false)
-		$("#custom-lib-file").slideDown();
-	}
-	else {
-		$("#custom-lib-file").slideUp();
-		$("#custom-lib-file").attr('disabled',true)
-	}
-});
+// $("#LocalThresholdType-input").change(function function_name(argument) {
+// 	if (this.value == "custom") {
+// 		$("#custom-lib-file").attr('disabled',false)
+// 		$("#custom-lib-file").slideDown();
+// 	}
+// 	else {
+// 		$("#custom-lib-file").slideUp();
+// 		$("#custom-lib-file").attr('disabled',true)
+// 	}
+// });
 
 $("#ThreshType-input").change(function function_name(argument) {
 	if (this.value == "global") {
@@ -95,8 +95,8 @@ $("#ThreshType-input").change(function function_name(argument) {
 		$("#global-options-panel").slideDown();
 		$("#local-options-panel").slideUp();
 		$("#local-options-panel").attr('disabled',true)
-	}
-	else {
+
+	}else {
 		$("#local-options-panel").attr('disabled',false)
 		$("#local-options-panel").slideDown();
 		$("#global-options-panel").slideUp();
@@ -113,33 +113,63 @@ $("#SampleNumber-input").change(function function_name(argument) {
 	}
 });
 
+$("#LocalThresholdType-input").change(function function_name(argument) {
+	if(this.value == 'MinMaxMean'){
+		$("#percentile_or_value_local-input").attr('disabled',false)
+		$("#custom-lib-file").attr('disabled',true)
+	}else if(this.value == 'Custom'){
+		$("#custom-lib-file").attr('disabled',false)
+		$("#percentile_or_value_local-input").attr('disabled',true)
+	}else if(this.value=='Mean'){
+		$("#percentile_or_value_local-input").attr('disabled',true)
+		$("#custom-lib-file").attr('disabled',true)
+	}
+
+});
+
 $("#percentile_or_value-input").change(function function_name(argument) {
 	if(this.value == 'percentile'){
 		$("#percentile-input").attr('disabled',false)
+		$("#value-input").attr('disabled',true)
+	} else{
+		$("#percentile-input").attr('disabled',true)
+		$("#value-input").attr('disabled',false)
+	}
+});
+
+$("#percentile_or_value_local-input").change(function function_name(argument) {
+	if(this.value == 'percentile'){
 		$("#percentileHigh-input").attr('disabled',false)
 		$("#percentileLow-input").attr('disabled',false)
-		$("#value-input").attr('disabled',true)
 		$("#valueHigh-input").attr('disabled',true)
 		$("#valueLow-input").attr('disabled',true)
 	} else{
-		$("#percentile-input").attr('disabled',true)
 		$("#percentileHigh-input").attr('disabled',true)
 		$("#percentileLow-input").attr('disabled',true)
-		$("#value-input").attr('disabled',false)
 		$("#valueHigh-input").attr('disabled',false)
 		$("#valueLow-input").attr('disabled',false)
 	}
 });
 
-$("#EnoughSamples-input").change(function function_name(argument) {
-	if(this.value == 'yes'){
-		$("#LocalThresholdType-input").attr('disabled',false)
-		$("#custom-lib-file").attr('disabled',false)
-	} else{
-		$("#LocalThresholdType-input").attr('disabled',true)
-		$("#custom-lib-file").attr('disabled',true)
-	}
-});
+
+// $("#EnoughSamples-input").change(function function_name(argument) {
+// 	if(this.value == 'yes'){
+// 		$("#LocalThresholdType-input").attr('disabled',false)
+// 		$("#percentile_or_value_local-input").attr('disabled',false)
+// 		$("#percentileHigh-input").attr('disabled',false)
+// 		$("#percentileLow-input").attr('disabled',false)
+// 		$("#valueHigh-input").attr('disabled',false)
+// 		$("#valueLow-input").attr('disabled',false)
+
+// 	} else{
+// 		$("#LocalThresholdType-input").attr('disabled',true)
+// 		$("#percentile_or_value_local-input").attr('disabled',true)
+// 		$("#percentileHigh-input").attr('disabled',true)
+// 		$("#percentileLow-input").attr('disabled',true)
+// 		$("#valueHigh-input").attr('disabled',true)
+// 		$("#valueLow-input").attr('disabled',true)
+// 	}
+// });
 
 
 </script>

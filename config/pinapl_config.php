@@ -43,24 +43,24 @@ return [
 				"rules" => "numeric|min:5|max:95",
 				"type"=>'number'
 			],
-			"percentileLow" => [ 
-				"display_name"=>"Minimum Percentile",
-				"default"=> "25",
-				"placeholder"=> "Percent (0-95%)",
-				"help_text"=>"Enter the minimum percentile for gene retention",
-				"in_quotes"=>false,
-				"rules" => "numeric|min:0|max:95",
-				"type"=>'number'
-			],
-			"percentileHigh" => [ 
-				"display_name"=>"Maximum Percentile",
-				"default"=> "25",
-				"placeholder"=> "Percent (5-100%)",
-				"help_text"=>"Enter the maximum percentile for gene retention",
-				"in_quotes"=>false,
-				"rules" => "numeric|min:5|max:100",
-				"type"=>'number'
-			],
+			// "percentileLow" => [ 
+			// 	"display_name"=>"Minimum Percentile",
+			// 	"default"=> "25",
+			// 	"placeholder"=> "Percent (0-95%)",
+			// 	"help_text"=>"Enter the minimum percentile for gene retention",
+			// 	"in_quotes"=>false,
+			// 	"rules" => "numeric|min:0|max:95",
+			// 	"type"=>'number'
+			// ],
+			// "percentileHigh" => [ 
+			// 	"display_name"=>"Maximum Percentile",
+			// 	"default"=> "25",
+			// 	"placeholder"=> "Percent (5-100%)",
+			// 	"help_text"=>"Enter the maximum percentile for gene retention",
+			// 	"in_quotes"=>false,
+			// 	"rules" => "numeric|min:5|max:100",
+			// 	"type"=>'number'
+			// ],
 			"value" => [ 
 				"display_name"=>"Threshold Expression Value",
 				"default"=> "5",
@@ -69,25 +69,25 @@ return [
 				"in_quotes"=>false,
 				"rules" => "numeric|min:1|max:1000",
 				"type"=>'number'
-			],
-			"valueLow" => [ 
-				"display_name"=>"Minimum Expression Value",
-				"default"=> "5",
-				"placeholder"=> "Expression Value (1-100)",
-				"help_text"=>"Enter the minimum value for gene retention",
-				"in_quotes"=>false,
-				"rules" => "numeric|min:1|max:100",
-				"type"=>'number'
-			],
-			"valueHigh" => [ 
-				"display_name"=>"Maximum Expression Value",
-				"default"=> "5",
-				"placeholder"=> "Expression Value (1-10000)",
-				"help_text"=>"Enter the maximum value for gene retention",
-				"in_quotes"=>false,
-				"rules" => "numeric|min:1|max:10000",
-				"type"=>'number'
-			]
+			]//,
+			// "valueLow" => [ 
+			// 	"display_name"=>"Minimum Expression Value",
+			// 	"default"=> "5",
+			// 	"placeholder"=> "Expression Value (1-100)",
+			// 	"help_text"=>"Enter the minimum value for gene retention",
+			// 	"in_quotes"=>false,
+			// 	"rules" => "numeric|min:1|max:100",
+			// 	"type"=>'number'
+			// ],
+			// "valueHigh" => [ 
+			// 	"display_name"=>"Maximum Expression Value",
+			// 	"default"=> "5",
+			// 	"placeholder"=> "Expression Value (1-10000)",
+			// 	"help_text"=>"Enter the maximum value for gene retention",
+			// 	"in_quotes"=>false,
+			// 	"rules" => "numeric|min:1|max:10000",
+			// 	"type"=>'number'
+			// ]
 		],
 		"Local Parameters" => [	
 			"EnoughSamples" => [
@@ -110,6 +110,52 @@ return [
 				"type"=> "select",
 				"options" => ["minmaxmean"=>"MinMaxMean", "mean"=>"Mean","custom"=>"Custom"]
 			],
+			"percentile_or_value_local" => [
+				"display_name"=>"Percentile or Value",
+				"default"=>"percentile",
+				"placeholder"=> "Please specify",
+				"help_text"=>"Choose a thresholding method",
+				"in_quotes"=>true,
+				"rules" => "string|in:percentile,value",
+				"type"=> "select",
+				"options" => ["percentile"=>"percentile", "value"=>"value"]
+			],
+			"percentileLow" => [ 
+				"display_name"=>"Minimum Percentile",
+				"default"=> "25",
+				"placeholder"=> "Percent (0-95%)",
+				"help_text"=>"Enter the minimum percentile for gene retention",
+				"in_quotes"=>false,
+				"rules" => "numeric|min:0|max:95",
+				"type"=>'number'
+			],
+			"percentileHigh" => [ 
+				"display_name"=>"Maximum Percentile",
+				"default"=> "25",
+				"placeholder"=> "Percent (5-100%)",
+				"help_text"=>"Enter the maximum percentile for gene retention",
+				"in_quotes"=>false,
+				"rules" => "numeric|min:5|max:100",
+				"type"=>'number'
+			],
+			"valueLow" => [ 
+				"display_name"=>"Minimum Expression Value",
+				"default"=> "5",
+				"placeholder"=> "Expression Value (1-100)",
+				"help_text"=>"Enter the minimum value for gene retention",
+				"in_quotes"=>false,
+				"rules" => "numeric|min:1|max:100",
+				"type"=>'number'
+			],
+			"valueHigh" => [ 
+				"display_name"=>"Maximum Expression Value",
+				"default"=> "5",
+				"placeholder"=> "Expression Value (1-10000)",
+				"help_text"=>"Enter the maximum value for gene retention",
+				"in_quotes"=>false,
+				"rules" => "numeric|min:1|max:10000",
+				"type"=>'number'
+			]
 		]
 	],
 	"directories"=> 
