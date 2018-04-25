@@ -64,17 +64,7 @@
 	</div>
 </div>
 
-  <footer>
-  <div class="row footer align-center">
-    <div class=" columns">
-    	Our website is currently in <b>beta</b>. If you would like more information about methods or future publications please contact: <a href="mailto:arichelle@ucsd.edu">Anne Richelle</a> or <a href="mailto:n4lewis@ucsd.edu">Nathan E. Lewis</a>
-
-    	 
-<!--       If you like this site, please acknowledge Metabolic Tasks in your publication: <br>
-      Anne et. al...<a href="https://www.nature.com/articles/s41598-017-16193-9"> doi: 10.1038/s41598-017-16193-9.</a> -->
-    </div>
-  </div>
-</footer>
+  
 
 @stop
 @section('customCSS')

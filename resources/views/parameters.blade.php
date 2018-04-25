@@ -1,14 +1,22 @@
 @php
 	$title = "Configure your analysis run";
-	$description = "Please choose your <b>expression preprocessing:</b><br>
+	$description = "Please choose your the <b>options for the definition of gene activity threshold:</b>
 	<ul>
-		<li>global: threshold of expression is unique and defined based on a percentile computed from the distribution of the gene expression or value directly provided by the users</li>
-		<li>local: each gene is associated with is own expression threshold. It can be computed using different rules (e.g., mean of gene value across the samples, ...)</li>
-	</ul>
-	<b>Note:</b> the type of thresholding available to the users will depend on the number of sample available (e.g. local thresholding approach will only be available when expression data associated with at least 3 different samples ar provided). <br>
-	<b>Min/Max Means Rule:</b> For each gene the activity threshold is defined by the mean value of the expression over all the samples available. BUT, the threshold need to be higher or equal the 25th percentile (global threshold), AND it should be lower or equal to the 75th percentile (global threshold).;</li>
-	<b>Number of Samples:</b> Local Thresholding requires at least 3 samples.
-	"
+		<li><b>global</b>: the threshold value is the same for all the genes.
+			<ul>
+			<li><b>value</b> - the user provide the expression value for which a gene is considered as active or not</li>
+			<li><b>percentile</b> - the threshold is defined based on a percentile computed from the distribution of expression values for all the genes and across all samples of the user dataset</li>
+			</ul>
+		</li>
+		<li><b>local</b>: the threshold value is different for all the genes
+			<ul>
+				<li><b>Mean</b> - the threshold for a gene is defined as the mean expression value of this gene across all the samples, tissues, or conditions (option only available if more than 3 samples are provided by the user).</li>
+				<li><b>MinMaxMean</b> - the threshold for a gene is determined by the mean of expression values observed for that gene among all the samples, tissues, or conditions BUT the threshold :(i) must be higher or equal to a lower bound and (ii) must be lower or equal to an upper bound. The lower an upper bound can be defined using a <b>value</b> introduced by the user or based on a <b>percentile</b> of the distribution of expression value for all the genes and across all samples of your dataset (option only available if more than 3 samples are provided by the user).</li>
+				<li><b>Custom</b> – (UNDER CONSTRUCTION) the user provide the list of threshold value associated to each gene. This option allows user to use the local threshold approach even if their dataset present less than 3 samples.</li>
+			</ul>
+		</li>
+	</ul>"
+
 @endphp
 @extends('layouts.master',["title"=>$title, "description"=>$description])
 @section('before_title')
