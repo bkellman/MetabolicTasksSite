@@ -47,27 +47,27 @@ class uploader {
 		this.client = kotrans.client.createClient({host:host, port:this.koTransPort , no_streams:this.no_streams, chunk_size:this.chunk_size});
 	}
 
-	attemptRestart(){
+	// attemptRestart(){
 
-		$('#drop-box').before('<div id="upload-error"><h2>The upload server appears to be down. Attempting to restart it now. Please wait</h2><div id="loader"></div></div>');
-		$('#drop-box').hide();
-		$.get("/check-kotrans", function (data) {
-			if (data == "running") {
-				var errorMsg = "It appears our upload server is running, but you can't connect to it.";
-				errorMsg += " Please check any blocking software you may have installed such as ad blockers or uMatrix.";
-				errorMsg += " If you are still having problems please email us at pinapl-py@ucsd.edu"
-				$('#upload-error').text(errorMsg);
-			} else if (data == "restarted"){
-				// unbind the refresh warning
-				window.onbeforeunload = function () {};
-				location.reload();
-			}
-			else {
-				var errorMsg = "We seem to be having problems restarting the server. Please email us at pinapl-py@ucsd.edu and let us know.";
-				$('#upload-error').text(errorMsg);
-			}
-		});
-	}
+	// 	$('#drop-box').before('<div id="upload-error"><h2>The upload server appears to be down. Attempting to restart it now. Please wait</h2><div id="loader"></div></div>');
+	// 	$('#drop-box').hide();
+	// 	$.get("/check-kotrans", function (data) {
+	// 		if (data == "running") {
+	// 			var errorMsg = "It appears our upload server is running, but you can't connect to it.";
+	// 			errorMsg += " Please check any blocking software you may have installed such as ad blockers or uMatrix.";
+	// 			errorMsg += " If you are still having problems please email us at pinapl-py@ucsd.edu"
+	// 			$('#upload-error').text(errorMsg);
+	// 		} else if (data == "restarted"){
+	// 			// unbind the refresh warning
+	// 			window.onbeforeunload = function () {};
+	// 			location.reload();
+	// 		}
+	// 		else {
+	// 			var errorMsg = "We seem to be having problems restarting the server. Please email us at pinapl-py@ucsd.edu and let us know.";
+	// 			$('#upload-error').text(errorMsg);
+	// 		}
+	// 	});
+	// }
 
 	initilize(){
 			
@@ -157,7 +157,7 @@ class uploader {
 			location.reload();
 		}
 		else { // The server was crashed on server, attempt to restart server and ask user to wait.
-			this.attemptRestart();
+			// this.attemptRestart();
 		}
 	}
 

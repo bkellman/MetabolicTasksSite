@@ -7,12 +7,18 @@
 	</div>
 	<div class="medium-9 columns" id="welcome-text">
 		<div class="row">
-			<h4>CellFie</h4>
+			<h4><b>CellFie</b>: <b>C</b>ellular <b>F</b>unctions <b>I</b>nferenc<b>E</b></h4>
 		</div>
 		<div>
-			<b>A metabolic modeling informed approach to functional enrichment.</b>
+			<b>Model-based Inference of Cellular Functions</b><br><br>
+			An alternative approach to capture the breadth of cellular functions by performing a
+			functional analysis of existing biological networks. We curated hundreds of metabolic functions from literature and defined them with regard to their metabolic pathways usage in existing genome-scale models of mammalian
+			metabolism.	This platform can be used to comprehensively quantify the propensity of a cell line or
+			tissue to be responsible for a metabolic function.<br>
+			<br><br><br><br>
 		</div>
 		<div class="row">
+			<br>
 			Please enter a name for your run below.<br>
 			Please enter an email address if you would like to receive a notification email after completion (optional).
 		</div>
@@ -35,7 +41,7 @@
 								  <option value="MT_iHsa.mat">Human (hsa)</option>
 								  <option value="MT_quek14.mat">quek14</option>
 								  <option value="MT_iRno.mat">iRno</option>
-								  <option value="MT_inesMouseModel.mat">Mouse (ines)</option>
+								  <!-- <option value="MT_inesMouseModel.mat">Mouse (ines)</option> -->
 								  <option value="MT_iMM1415.mat">Mouse (iMM1415)</option>
 								  <option value="Cho_gem">CHO (GeM)</option>
 								</select>
@@ -57,14 +63,19 @@
 		</div>
 	</div>
 </div>
-<footer>
-	<div class="row footer align-center">
-		<div class=" columns">
-			If you like this site, please acknowledge Metabolic Tasks in your publication: <br>
-			Anne et. al...<a href="https://www.nature.com/articles/s41598-017-16193-9"> doi: 10.1038/s41598-017-16193-9.</a>
-		</div>
-	</div>
+
+  <footer>
+  <div class="row footer align-center">
+    <div class=" columns">
+    	Our website is currently in <b>beta</b>. If you would like more information about methods or future publications please contact: <a href="mailto:arichelle@ucsd.edu">Anne Richelle</a> or <a href="mailto:n4lewis@ucsd.edu">Nathan E. Lewis</a>
+
+    	 
+<!--       If you like this site, please acknowledge Metabolic Tasks in your publication: <br>
+      Anne et. al...<a href="https://www.nature.com/articles/s41598-017-16193-9"> doi: 10.1038/s41598-017-16193-9.</a> -->
+    </div>
+  </div>
 </footer>
+
 @stop
 @section('customCSS')
 	<style type="text/css">

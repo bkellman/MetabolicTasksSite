@@ -9,7 +9,6 @@
 				</ul>
 				<li>Click \"Enter Sample Information\" when finished uploading.</li>  
 				<li>Please do not close this window. Your data will be deleted if you refresh the page.</li>  
-				<li>Upload speed is dependent on your internet connection and file size (we recommend using <b>fastq.gz</b> for optimal speed)</li>  
 				<li>Please use the most recent version of <a href='https://www.mozilla.org/firefox/new/'>Firefox</a> or <a href='https://www.google.com/chrome/browser/desktop/index.html'>Chrome</a></li>  
 			</ul>";
 @endphp
