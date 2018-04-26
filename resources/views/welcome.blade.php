@@ -79,6 +79,7 @@
 		}
 		#welcome-logo{
 			height: 340px;
+			width: 340px;
 		}
 		#how-to-img {
 			margin-left: 2em;
