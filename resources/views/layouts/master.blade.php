@@ -57,21 +57,19 @@
       $(document).foundation();
     </script>
     @yield('customScripts')
-
+  </body>
 
 <footer>
   <div class="row footer align-center">
     <div class=" columns">
       <br><br>
       Our website is currently in <b>beta</b>. If you would like more information about methods or future publications please contact: <a href="mailto:arichelle@ucsd.edu">Anne Richelle</a> or <a href="mailto:n4lewis@ucsd.edu">Nathan E. Lewis</a>
-
-       
+      <br><br>
+      This website uses a source code generously shared by Tyler Bath and the <a href="http://pinapl-py.ucsd.edu/">PinAPL-Py project</a>. The CellFie project and PinAPL-Py are not maintained by the same authors nor related in any other way.
 <!--       If you like this site, please acknowledge Metabolic Tasks in your publication: <br>
       Anne et. al...<a href="https://www.nature.com/articles/s41598-017-16193-9"> doi: 10.1038/s41598-017-16193-9.</a> -->
     </div>
   </div>
 </footer>
-
-  </body>
 
 </html>
