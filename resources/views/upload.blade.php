@@ -34,7 +34,8 @@
 				<div id="file-list">
 				</div>
 				<div id="drop-box-tips" class="center">
-					<h4>Drag & drop sequence files here</h4>
+					<h4>"Drag & drop tab-delimited, normalized transcript abundance files here"</h4>
+					<br> Currently, only entrez ids are accepted. See instructions above for file specifications.
 				</div>
 			</div>
 		</div>
