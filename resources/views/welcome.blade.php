@@ -43,7 +43,8 @@
 								  <option value="MT_iRno.mat">iRno</option>
 								  <!-- <option value="MT_inesMouseModel.mat">Mouse (ines)</option> -->
 								  <option value="MT_iMM1415.mat">Mouse (iMM1415)</option>
-								  <option value="Cho_gem">CHO (GeM)</option>
+<!-- 								  <option value="Cho_gem">CHO (GeM)</option> -->
+								  <option value="MT_iCHOv1_final.mat">CHO (GeM)</option>
 								</select>
 							</div>
 							<div class="medium-4 columns">
