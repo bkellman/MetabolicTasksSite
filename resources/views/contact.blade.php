@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
-<h2>UNDER CONSTRUCTION</h2>
-
+<!-- <h2>UNDER CONSTRUCTION</h2>
+ -->
 <!-- <div id="content">
 	<div class="row">
 		<div class="twelve columns">

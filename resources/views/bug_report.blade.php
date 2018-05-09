@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-	@if (!empty($status))
+<!-- 	@if (!empty($status))
 	<div class="callout success">
 		{{ $status }}
 	</div>
@@ -18,5 +18,5 @@
 		<input type="text" name="email">
 
 		<input type="submit" class="button" name="Submit">
-	</form>
+	</form> -->
 @endsection
