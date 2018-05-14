@@ -35,16 +35,16 @@
 							<div class="medium-4 columns">
 								<label for="ref"><span class="has-tip tip-top whiteTxt" title="Choose the reference model">Reference Model</span></label>
 								<select id="ref" name="ref">
-								  <option value="MT_recon_2_2_entrez.mat">Human (recon2.2)</option>
-								  <option value="MT_recon_2.mat">Human (recon2)</option>
-								  <option value="MT_recon_1.mat">Human (recon1)</option>
-								  <option value="MT_iHsa.mat">Human (hsa)</option>
-								  <option value="MT_quek14.mat">quek14</option>
-								  <option value="MT_iRno.mat">iRno</option>
+								  <option value="MT_recon_2_2_entrez.mat">Human (Recon2.2)</option>
+								  <option value="MT_recon_2.mat">Human (Recon2)</option>
+								  <option value="MT_recon_1.mat">Human (Recon1)</option>
+								  <option value="MT_iHsa.mat">Human (iHsa)</option>
+								  <option value="MT_quek14.mat">Human (quek14)</option>
+								  <option value="MT_iRno.mat">Rat (iRno)</option>
 								  <!-- <option value="MT_inesMouseModel.mat">Mouse (ines)</option> -->
 								  <option value="MT_iMM1415.mat">Mouse (iMM1415)</option>
 <!-- 								  <option value="Cho_gem">CHO (GeM)</option> -->
-								  <option value="MT_iCHOv1_final.mat">CHO (GeM)</option>
+								  <option value="MT_iCHOv1_final.mat">CHO (iCHOv1)</option>
 								</select>
 							</div>
 							<div class="medium-4 columns">
