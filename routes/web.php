@@ -37,8 +37,8 @@ Route::get('/contact', function () {
 
 Route::get('/example-data', function ()
 {
-		$path = resource_path('exampleFiles/CellFie_demo_data.zip');
-		$filename = 'CellFie_demo_data.zip';
+		$path = resource_path('exampleFiles/example-data.zip');
+		$filename = 'example-data.zip';
 		header("X-Sendfile: $path");
 		header("Content-type: application/octet-stream");
 		header('Content-Disposition: attachment; filename="' . $filename . '"');
