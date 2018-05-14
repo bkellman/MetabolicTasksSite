@@ -1,1 +1,1 @@
-bash /var/www/pinapl-py-site/app/Scripts/startRun.sh /var/www/pinapl-py-site/storage/runs/1523909223_33 /var/www/pinapl-py-site/storage/data/1523909223_33 > /var/www/pinapl-py-site/storage/runs/1523909223_33/runStatus.log
+bash /var/www/pinapl-py-site/app/Scripts/startRun.sh /var/www/pinapl-py-site/storage/runs/1526327797_100 /var/www/pinapl-py-site/storage/data/1526327797_100 > /var/www/pinapl-py-site/storage/runs/1526327797_100/runStatus.log

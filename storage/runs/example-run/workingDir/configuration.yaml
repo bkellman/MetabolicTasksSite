@@ -1,19 +1,20 @@
 # Required 
-ThreshType: 'global' 
-SampleNumber: 10 
+ThreshType: 'local' 
+SampleNumber: 32 
 
 # Global Parameters 
 percentile_or_value: 'percentile' 
-percentile: 50 
-percentileLow: 25 
-percentileHigh: 75 
+percentile: 25 
 value: 5 
-valueLow: 5 
-valueHigh: 5 
 
 # Local Parameters 
-EnoughSamples: 'no' 
-LocalThresholdType: 'MinMaxMean' 
+EnoughSamples: 'yes' 
+LocalThresholdType: 'minmaxmean' 
+percentile_or_value_local: 'percentile' 
+percentileLow: 25 
+percentileHigh: 75 
+valueLow: 5 
+valueHigh: 5 
 
 ref: 'MT_recon_2_2_entrez.mat' 
 WorkingDir: '/workingdir/'
