@@ -52,7 +52,7 @@ Route::get('/documentation', function ()  {
 //Return example output results page
 Route::get('/example-results', function ()
 {
-	return view('results',['runName'=>"Example Run", 'hash'=>"example-run"]);
+	return view('results',['runName'=>"Example Run: Human Protein Atlas (HPA: local, minmaxmean, 25-75%)", 'hash'=>"example-run"]);
 });
 
 
