@@ -20,6 +20,7 @@
   </div>
   <div class="align-middle">
     <h3>Heatmap of Tasks by Sample</h3>
+    <p>download results (green button at the top of the page) for complete description of active tasks</p>
     <img src='{{"/run-images?path=".urlencode("/$hash/workingDir/Analysis/Figures/score_bin_heatmap.png")}}'>
   </div>
 </div>
