@@ -22,8 +22,8 @@ scriptPath=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 cd $scriptPath/..
 sitePath=$(pwd)
 
-siteName="PinAPL-py" 
-siteSafeName="pinaplpy" # Should be all lowercase and no symbols
+siteName="CellFie" 
+siteSafeName="cellfie" # Should be all lowercase and no symbols
 
 
 echo -e "\e[1mInstalling required packages\e[0m"

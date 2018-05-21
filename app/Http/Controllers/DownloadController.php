@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\File;
 
 class DownloadController
 {
-protected $filepath = "/var/www/pinapl-py/storage/runs/example-run/archive.zip";
-protected $filename = "PinAPL-py_example_run.zip";
+protected $filepath = "/var/www/cellfie-site/storage/runs/example-run/archive.zip";
+protected $filename = "example_run.zip";
 
 public function xsendfile()
 {
@@ -19,7 +19,7 @@ public function xsendfile()
 }
 public function readfileDefault()
 {
-	$file = "/var/www/pinapl-py/storage/runs/example-run/archive.zip";
+	$file = "/var/www/cellfie-site/storage/runs/example-run/archive.zip";
 	if (file_exists($file)) {
 	    header('Content-Description: File Transfer');
 	    header('Content-Type: application/octet-stream');

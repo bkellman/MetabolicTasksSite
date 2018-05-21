@@ -131,7 +131,7 @@ class RunController extends Controller
 	public function postStart(Request $req, $hash)
 	{
 		$rules = [];
-		foreach (config('pinapl_config.parameter_groups') as $groupname => $parameters) {
+		foreach (config('cellfie_config.parameter_groups') as $groupname => $parameters) {
 			foreach ($parameters as $param_name => $param_properties) {
 				$rules = array_add($rules, $param_name, $param_properties['rules']."|nullable");
 			}
@@ -243,7 +243,7 @@ class RunController extends Controller
 			$customFilename = $customFile->getClientOriginalName();
 			\Log::debug("Custom File selected, name: ".$customFilename);
 		}
-		foreach (config('pinapl_config.parameter_groups') as $groupname => $parameters) {
+		foreach (config('cellfie_config.parameter_groups') as $groupname => $parameters) {
 			$config.= "# $groupname \n";
 			if ($groupname == "Library Parameters") {
 				if ($libFilename=='custom') {
@@ -256,7 +256,7 @@ class RunController extends Controller
 					}
 				}
 				else{
-					$folderName = config('pinapl_config.libraries')[$libFilename];
+					$folderName = config('cellfie_config.libraries')[$libFilename];
 					$libPath = resource_path("libraries/$folderName");
 					$libParameters = File::get("$libPath/library_parameters.txt");
 					$bowTieCopySuccessful = File::copyDirectory("$libPath/Bowtie2_Index", "$dir/workingDir/Library/Bowtie2_Index");
@@ -291,9 +291,9 @@ class RunController extends Controller
 		$run = Run::where('dir',$hash)->firstOrFail();
 		$config .= "ref:"." '$run->ref' \n";
 
-		$config .= config('pinapl_config.directories');
+		$config .= config('cellfie_config.directories');
 		$config .= "\n";
-		$config .= config('pinapl_config.script_filenames');
+		$config .= config('cellfie_config.script_filenames');
 
 		File::put("$dir/workingDir/configuration.yaml", $config);
 		File::put("$dir/workingDir/output.log", "");

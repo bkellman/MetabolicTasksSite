@@ -2,6 +2,6 @@
 sudo supervisord
 sudo supervisorctl reread
 sudo supervisorctl update
-sudo supervisorctl start pinapl-worker:*
-sudo supervisorctl start pinapl-worker-monitor:*
-sudo supervisorctl start pinapl-worker-start-run:*
+sudo supervisorctl start cellfie-worker:*
+sudo supervisorctl start cellfie-worker-monitor:*
+sudo supervisorctl start cellfie-worker-start-run:*

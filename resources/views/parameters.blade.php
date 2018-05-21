@@ -33,7 +33,7 @@
 <fieldset>
 	<legend>Project Parameters</legend>
 	<div class="row align-bottom medium-unstack">
-	@foreach (config('pinapl_config.parameter_groups.Required') as $paramName => $parameter)
+	@foreach (config('cellfie_config.parameter_groups.Required') as $paramName => $parameter)
 		@include('layouts.input',["name" => $paramName, "parameter"=>$parameter, "required"=>true])
 	@endforeach
 	</div>
@@ -45,7 +45,7 @@
 			<li class="accordion-item" data-accordion-item>
 				<a class="accordion-title" href="#">Global Threshold Options</a>
 				<div id="global-options-panel" class="accordion-content" data-tab-content>
-					@foreach (config('pinapl_config.parameter_groups.Global Parameters') as $paramName => $parameter)
+					@foreach (config('cellfie_config.parameter_groups.Global Parameters') as $paramName => $parameter)
 						@include('layouts.input',["name" => $paramName, "parameter"=>$parameter, "required"=>false])
 					@endforeach
 				</div>
@@ -60,7 +60,7 @@
 			<li class="accordion-item" data-accordion-item>
 				<a class="accordion-title" href="#">Local Threshold Options</a>
 				<div id="local-options-panel" class="accordion-content" data-tab-content>
-					@foreach (config('pinapl_config.parameter_groups.Local Parameters') as $paramName => $parameter)
+					@foreach (config('cellfie_config.parameter_groups.Local Parameters') as $paramName => $parameter)
 						@include('layouts.input',["name" => $paramName, "parameter"=>$parameter, "required"=>false])
 					@endforeach
 					<div class="column medium-3">
