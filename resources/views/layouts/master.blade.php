@@ -20,6 +20,13 @@
   </head>
   <body>
     @include('layouts.topbar')
+
+    @if(config('app.env') == 'local') 
+     <div data-alert class="alert-box warning">
+         This is the dev environment! Flee!
+    </div>
+    @endif
+    
     @if (!empty($errors) && count($errors)) 
     <div class="callout alert" id="error-messages">
       <p><i class="fi-alert"></i> There are some errors in your form.</p>
