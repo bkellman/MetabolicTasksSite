@@ -1,0 +1,12 @@
+{
+	"manifest":[
+		{
+			"objectID":"example-run",
+			"keywords": ["HPA","example","Human Protein Atlas","Tissue-level analysis","minmeanmax"]
+		},
+		{
+			"objectID":"1526937489_118",
+			"keywords": ["HPA","example","Human Protein Atlas","Tissue-level analysis","minmeanmax"]
+		}
+	]
+}

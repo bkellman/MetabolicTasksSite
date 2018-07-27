@@ -1,0 +1,34 @@
+{
+	"manifest":[
+		{
+			"objectID":"example-run",
+			"objectURL":"http://cellfie.ucsd.edu/example-results",
+			"objectLoc":"/var/www/cellfie-dev/storage/runs/example-run",
+			"objectSpec":{
+				"license": "Creative Commons Attribution-ShareAlike 3.0",
+				"keywords": ["HPA","example","Human Protein Atlas","Tissue-level analysis","minmeanmax"],
+				"contact": ["arichelle@ucsd.edu","n4lewis@eng.ucsd.edu"],
+				"derived_from": "https://www.proteinatlas.org/download/rna_tissue.tsv.zip",
+				"persistence": "forever",
+				"cited_by": 0,
+				"object_schema": "Analysis output, parsable by view('results',[''runName'=>$run->name', 'example-run'])",
+				"version": "1"
+			}
+		},
+		{
+			"objectID":"1526937489_118",
+			"objectURL":"http://cellfie.ucsd.edu/upload/1526937489_118",
+			"objectLoc":"/var/www/cellfie-dev/storage/runs/1526937489_118",
+			"objectSpec":{
+				"license": "Creative Commons Attribution-ShareAlike 3.0",
+				"keywords": ["HPA","example","Human Protein Atlas","Tissue-level analysis","minmeanmax"],
+				"contact": ["arichelle@ucsd.edu","n4lewis@eng.ucsd.edu"],
+				"derived_from": "https://www.proteinatlas.org/download/rna_tissue.tsv.zip",
+				"persistence": "forever",
+				"cited_by": 1,
+				"object_schema": "Analysis output, parsable by view('results',[''runName'=>$run->name', 'example-run'])",
+				"version": "1"
+			}
+		}
+	]
+}
