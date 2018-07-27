@@ -1,0 +1,10 @@
+No config updates to processes
+cellfie-worker:cellfie-worker_00: ERROR (spawn error)
+cellfie-worker-monitor:cellfie-worker-monitor_00: ERROR (spawn error)
+cellfie-worker-start-run:cellfie-worker-start-run_00: ERROR (spawn error)
+info:    Forever processes running
+data:        uid  command         script                      forever pid   id logfile                                        uptime  
+data:    [0] hfwO /usr/bin/nodejs public/js/kotrans/server.js 29708   29720    /var/www/cellfie-site/storage/logs/forever.log STOPPED 
+warn:    --minUptime not set. Defaulting to: 1000ms
+warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+info:    Forever processing file: public/js/kotrans/server.js

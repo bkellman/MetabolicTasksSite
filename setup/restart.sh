@@ -14,3 +14,5 @@ $scriptPath/startSupervisor.sh
 # Start Kotrans server
 $scriptPath/startKoTrans.sh
 
+# Put databases back up (optional)
+# php artisan up
