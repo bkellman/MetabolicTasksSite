@@ -195,6 +195,116 @@ Route::get('/run/status/{hash}', function ($hash)  {
 	}
 });
 
+// The fair API implementation
+// FAIR API described at: http://18.220.156.186:8089/docs/#!/default/
+Route::get('/repoInfo', function (\Illuminate\Http\Request $request) {
+
+   if ((!$request->exists('scoringEngine')) ||
+       ($request->input('scoringEngine') == 'prototype')) {
+
+  // Open the manifest file and convert it to in-memory JSON.  This should
+  // probably eventually be in a database or at least not in a hard coded file path
+  $manifestString = file_get_contents('/var/www/cellfie-dev/storage/manifest-to-return.json');
+  
+  // Convert to json
+  $manifestJson = json_decode($manifestString, true);
+  
+	return ([
+  'contact_name' => 'Nathan E. Lewis',
+  'repo_license_name' => 'Creative Commons Attribution-ShareAlike 3.0',
+  'contact_form' => 'http://cellfie.ucsd.edu/contact',
+  'manifest' => $manifestJson,
+  'terms_of_service' => '',
+  'landing_page' => 'http://cellfie.ucsd.edu/',
+  'supported_scoring_engines' => 'prototype',
+  'repo_license_URL' => 'https://creativecommons.org/licenses/by-sa/3.0/us/',
+  'contact_email' => 'n4lewis@eng.ucsd.edu']);
+  } else {
+     return (
+      'unsupported scoring engine ' . $request->input('scoringEngine')
+     );
+
+  }
+});
+
+// The fair API implementation
+// FAIR API described at: http://18.220.156.186:8089/docs/#!/default/
+Route::get('/objects/{id}', function ($id) {
+
+  // Open the manifest file and convert it to in-memory JSON.  This should
+  // probably eventually be in a database or at least not in a hard coded file path
+  $manifestString = file_get_contents('/var/www/cellfie-dev/storage/manifest.json');
+  
+  // Convert to json
+  $manifestJson = json_decode($manifestString, true);
+
+  // Find the object that was requested
+  foreach ($manifestJson['manifest'] as $thisObject) {
+     if ($thisObject['objectID'] == $id) {
+        return ([
+          'license' => $thisObject['objectSpec']['license'],
+          'keywords' => $thisObject['objectSpec']['keywords'],
+          'contact_email' => $thisObject['objectSpec']['contact'],
+          'derived_from' => $thisObject['objectSpec']['derived_from'],
+          'persistence' => $thisObject['objectSpec']['persistence'],
+          'cited_by' => $thisObject['objectSpec']['cited_by'],
+          'object_schema' => $thisObject['objectSpec']['object_schema'],
+          'version' => $thisObject['objectSpec']['version'] ]);
+     }
+  }
+});
+
+Route::get('/objects', function (\Illuminate\Http\Request $request) {
+
+   $keyword = $request->input('keyword');
+   $pageSize = intval($request->input('pageSize'));
+
+   // pageNumbers start with 1
+   $pageNumber = intval($request->input('pageNumber'));
+   
+   // Calculate the first and last index to search based on the pageSize and pageNumber
+   $first = $pageSize * ($pageNumber - 1);
+
+   // The "last" value should not be included in the search
+   $last = $first + $pageSize;
+
+   // Open the manifest file and convert it to in-memory JSON.  This should
+   // probably eventually be in a database or at least not in a hard coded file path
+   $manifestString = file_get_contents('/var/www/cellfie-dev/storage/manifest.json');
+
+   // Convert to json
+   $manifestJson = json_decode($manifestString, true);
+
+   // We will need to know how many entries there are in the manifest so we know when to stop
+   $count = count($manifestJson['manifest']);
+
+   $objectArray = array();
+
+   for($i = $first; $i < $last; $i++) {
+      if ($i > $count -1 ) {
+         // let's not run over the end of the array.
+         break;
+      }
+
+      $thisManifestEntry =  $manifestJson['manifest'][$i];
+      $thisKeywordArray = $thisManifestEntry['objectSpec']['keywords'];
+      $keywordCount = count($thisKeywordArray);
+      for($j = 0; $j < $keywordCount; $j++) {
+         $cmp = strcmp($thisKeywordArray[$j], $keyword);
+
+         if (0 == strcmp($thisKeywordArray[$j], $keyword)) {
+            $thisObj = new \stdClass();
+            $thisObj->objectid = $thisManifestEntry['objectID'];
+            array_push($objectArray, $thisObj);
+            break;
+         }
+      }
+   }
+
+   return(json_encode($objectArray));
+ 
+});
+
 // The upload page for a run. If the run has a status of running, redirect to run page
 Route::get('/rerun/{hash}', [function ($hash) {
 	return view('rerun', ['hash'=>$hash]);
